@@ -2,6 +2,8 @@
 import React from "react";
 // react-router-dom
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// redux
+import { connect } from "react-redux";
 // css
 import "./App.css";
 
@@ -15,23 +17,27 @@ import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 // FIREBASE
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+// importing user action from redux
+import { setCurrentUser } from "./redux/user/user.actions";
 
 // ^ MAIN CLASS COMPONENT
 class App extends React.Component {
-  // ! pass props in constructor if you ever need to use props in state
-  constructor() {
-    super();
+  // // // ! pass props in constructor if you ever need to use props in state
+  // // constructor() {
+  // //   super();
 
-    // ! APP COMPONENT STATE
-    this.state = {
-      currentUser: null
-    };
-  }
+  // //   // ! APP COMPONENT STATE
+  // //   this.state = {
+  // //     currentUser: null
+  // //   };
+  // // }
 
   unsubscribeFromAuth = null;
 
   // * ONE OF THE LIFECYCLE METHOD IN REACT.COMPONENT
   componentDidMount() {
+    const { setCurrentUser } = this.props;
+
     // * FIREBASE AUTHENTICATION
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
@@ -45,21 +51,25 @@ class App extends React.Component {
 
         userRef.onSnapshot((snapShot) => {
           // console.log(snapShot.data());
-          this.setState(
-            {
-              currentUser: {
-                id: snapShot.id,
-                ...snapShot.data()
-              }
-            }
-            // //  () => console.log(this.state)
-          );
+          // // this.setState(
+          // //   {
+          // //     currentUser: {
+          // //       id: snapShot.id,
+          // //       ...snapShot.data()
+          // //     }
+          // //   }
+          // //   // //  () => console.log(this.state)
+          // // );
+          setCurrentUser({
+            id: snapShot.id,
+            ...snapShot.data()
+          });
         });
       }
 
       // ^ ELSE SET STATE FOR currentUser to NULL
 
-      this.setState({ currentUser: userAuth });
+      setCurrentUser({ currentUser: userAuth });
     });
   }
 
@@ -73,7 +83,7 @@ class App extends React.Component {
     return (
       <div>
         <Router>
-          <Header currentUser={this.state.currentUser} />
+          <Header />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/shop" component={ShopPage} />
@@ -85,4 +95,8 @@ class App extends React.Component {
   }
 }
 
-export default App;
+const mapDispatchToProps = (dispatch) => ({
+  setCurrentUser: (user) => dispatch(setCurrentUser(user))
+});
+
+export default connect(null, mapDispatchToProps)(App);
