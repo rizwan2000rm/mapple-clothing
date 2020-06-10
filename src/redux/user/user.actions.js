@@ -1,10 +1,6 @@
-//! REDUX ACTIONS
-//^ {
-//^   type: determines the state changes,
-//^   payload: helps with state changes
-//^ }
+import { UserActionTypes } from "./user.types";
 
 export const setCurrentUser = (user) => ({
-  type: "SET_CURRENT_USER",
+  type: UserActionTypes.SET_CURRENT_USER,
   payload: user
 });
