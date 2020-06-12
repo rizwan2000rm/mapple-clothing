@@ -5,9 +5,13 @@
 Built with:
 
 > React
+
 > Redux
+
 > FireBase
+
 > Stripe - Payment handled with backend server built with Node.js Express.js
+
 > SASS
 
 Features:
