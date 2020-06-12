@@ -14,7 +14,7 @@ Built with:
 
 > SASS
 
-##Features:
+## Features:
 
 1. React JSX Components with Redux state management
 2. User Authentication with Firebase (Google Sign In/ Email Password)
