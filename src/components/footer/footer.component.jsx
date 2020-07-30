@@ -33,8 +33,11 @@ const Footer = () => (
     </div>
     <div className="footer-copyright">
       <div className="container">
-        © 2020 Mapple CLothing
-        <a className="grey-text text-lighten-4 right" href="#!">
+        © 2020 Mapple Clothing
+        <a
+          className="grey-text text-lighten-4 right"
+          href="https://github.com/rizwan2000rm"
+        >
           Made by Rizwan Memon
         </a>
       </div>

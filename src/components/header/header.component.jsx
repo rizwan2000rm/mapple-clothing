@@ -31,15 +31,19 @@ const Header = ({ currentUser, hidden }) => {
     <header>
       <div className="navbar-fixed">
         <nav>
-          <div class="nav-wrapper teal">
-            <Link class="brand-logo" to="/">
+          <div className="nav-wrapper teal">
+            <Link className="brand-logo" to="/">
               Mapple Clothing
             </Link>
-            <a href="/" data-target="slide-out" class="sidenav-trigger right">
-              <i class="material-icons">menu</i>
+            <a
+              href="/"
+              data-target="slide-out"
+              className="sidenav-trigger right"
+            >
+              <i className="material-icons">menu</i>
             </a>
 
-            <ul class="right hide-on-med-and-down">
+            <ul className="right hide-on-med-and-down">
               <li>
                 <Link to="/shop">
                   <i className="material-icons left">store</i>
@@ -74,7 +78,7 @@ const Header = ({ currentUser, hidden }) => {
           <div className="user-view">
             <div className="background">
               <img
-                class="materialboxed"
+                className="materialboxed"
                 width="300"
                 alt="background"
                 src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
@@ -118,7 +122,7 @@ const Header = ({ currentUser, hidden }) => {
         </li>
         <li className="cart">
           <a className="option" href="/checkout">
-            <i class="material-icons shopping-icon">shopping_cart</i>
+            <i className="material-icons shopping-icon">shopping_cart</i>
             CART
           </a>
         </li>

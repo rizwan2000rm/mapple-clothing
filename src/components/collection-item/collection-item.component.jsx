@@ -21,7 +21,7 @@ const CollectionItem = ({ item, addItem }) => {
           <h6>Price: ${price}/-</h6>
           {/* eslint-disable-next-line */}
           <a
-            class="waves-effect waves-light btn teal"
+            className="waves-effect waves-light btn teal"
             onClick={() => addItem(item)}
           >
             Add To Cart

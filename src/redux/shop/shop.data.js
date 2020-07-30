@@ -5,13 +5,6 @@ const SHOP_DATA = {
     routeName: "accessories",
     items: [
       {
-        id: 1,
-        name: "Classic Watch",
-        imageUrl:
-          "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-        price: 35
-      },
-      {
         id: 2,
         name: "Apple Watch",
         imageUrl:
@@ -33,6 +26,13 @@ const SHOP_DATA = {
         price: 26
       },
       {
+        id: 6,
+        name: "Sunglasses",
+        imageUrl:
+          "https://images.unsplash.com/photo-1497551060073-4c5ab6435f12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        price: 14
+      },
+      {
         id: 5,
         name: "Wallet",
         imageUrl:
@@ -40,12 +40,13 @@ const SHOP_DATA = {
         price: 8
       },
       {
-        id: 6,
-        name: "Sunglasses",
+        id: 1,
+        name: "Classic Watch",
         imageUrl:
-          "https://images.unsplash.com/photo-1497551060073-4c5ab6435f12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        price: 14
+          "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        price: 35
       },
+
       {
         id: 7,
         name: "Headphones",
@@ -60,12 +61,6 @@ const SHOP_DATA = {
           "https://images.unsplash.com/photo-1594864650856-f279f6fe6d7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         price: 44
       }
-      // {
-      //   id: 9,
-      //   name: "Blue Snapback",
-      //   imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
-      //   price: 16
-      // }
     ]
   },
   shoes: {
