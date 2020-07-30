@@ -13,38 +13,32 @@ import {
 import "./checkout.styles.scss";
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <div className="checkout-page">
-    <div className="checkout-header">
-      <div className="header-block">
-        <span>Product</span>
-      </div>
+  <div className="container teal-text">
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        {cartItems.map((cartItem) => (
+          <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+        ))}
+      </tbody>
+    </table>
 
-      <div className="header-block">
-        <span>Description</span>
-      </div>
-
-      <div className="header-block">
-        <span>Quantity</span>
-      </div>
-
-      <div className="header-block">
-        <span>Price</span>
-      </div>
-
-      <div className="header-block">
-        <span>Remove</span>
-      </div>
-    </div>
-    {cartItems.map((cartItem) => (
-      <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-    ))}
-    <div className="total">TOTAL: ${total}</div>
+    <div className="total right-align">TOTAL: ${total}</div>
     <div className="test-warning">
       *PLEASE USE THE FOLLOWING CREDIT CARD FOR PAYMENTS*
       <br />
       4242 4242 4242 4242 - Exp: 01/25 - CVV: 123
     </div>
-    <StripeCheckoutButton price={total} />
+    <div className="right-align">
+      <StripeCheckoutButton price={total} />
+    </div>
   </div>
 );
 

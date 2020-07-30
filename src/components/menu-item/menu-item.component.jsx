@@ -25,18 +25,16 @@ const MenuItem = ({
 
   return (
     <div className="col s12 l6">
-      <div className="card medium">
+      <div className="card hoverable">
         <div className="card-image">
           <img class="materialboxed" width="300" alt={title} src={imageUrl} />
-        </div>
-        <div className="card-content">
           <span className="card-title">{title.toUpperCase()}</span>
-          <p>{description}</p>
         </div>
-        <div className="card-action ">
-          <Link className="teal-text" to={linkUrl}>
-            Explore
+        <div class="card-content">
+          <Link to={linkUrl} className="card-title teal-text">
+            {title.toUpperCase()}
           </Link>
+          <p>{description}</p>
         </div>
       </div>
     </div>

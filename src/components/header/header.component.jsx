@@ -87,39 +87,40 @@ const Header = ({ currentUser, hidden }) => {
                 src="https://png.pngtree.com/template/20190927/ourlarge/pngtree-initials-letter-m-logo-vector-template-designs-image_311990.jpg"
               />
             </h3>
-            <Link to="/">
+            <a href="/">
               <span className="name">Mapple Clothing</span>
-            </Link>
+            </a>
             <a href='mailto:enquiries.mappleclothing@gmail.com?subject="Enquiry"'>
               enquiries.mappleclothing@gmail.com
             </a>
           </div>
         </li>
         <li>
-          <Link to="/shop">
+          <a href="/shop">
             <i className="material-icons left">store</i>
             SHOP
-          </Link>
+          </a>
         </li>
 
         <li>
           {currentUser ? (
-            <Link className="option click" onClick={() => auth.signOut()}>
+            // eslint-disable-next-line
+            <a className="option click" onClick={() => auth.signOut()}>
               <i className="material-icons left">login</i>
               SIGN OUT
-            </Link>
+            </a>
           ) : (
-            <Link className="option" to="/signin">
+            <a className="option" href="/signin">
               <i className="material-icons left">login</i>
               LOGIN
-            </Link>
+            </a>
           )}
         </li>
         <li className="cart">
-          <Link className="option" to="/checkout">
+          <a className="option" href="/checkout">
             <i class="material-icons shopping-icon">shopping_cart</i>
             CART
-          </Link>
+          </a>
         </li>
       </ul>
     </header>

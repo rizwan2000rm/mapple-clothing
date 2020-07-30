@@ -12,10 +12,16 @@ const Directory = ({ sections }) => (
   // <div className="directory-menu">
 
   // </div>
-  <div className="row">
-    {sections.map(({ id, ...otherSectionProps }) => (
-      <MenuItem key={id} {...otherSectionProps} />
-    ))}
+  <div className="directory">
+    <div className="header teal-text">
+      <h4>SHOP NOW</h4>
+      <hr />
+    </div>
+    <div className="row">
+      {sections.map(({ id, ...otherSectionProps }) => (
+        <MenuItem key={id} {...otherSectionProps} />
+      ))}
+    </div>
   </div>
 );
 

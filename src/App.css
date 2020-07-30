@@ -14,3 +14,11 @@ a {
 img {
   width: 100%;
 }
+
+.row {
+  margin-bottom: 0px;
+}
+
+.row .col {
+  padding: 0 0.5rem;
+}
