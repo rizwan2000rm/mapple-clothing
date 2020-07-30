@@ -1,203 +1,226 @@
 const SHOP_DATA = {
-  hats: {
+  accessories: {
     id: 1,
-    title: "Hats",
-    routeName: "hats",
+    title: "accessories",
+    routeName: "accessories",
     items: [
       {
         id: 1,
-        name: "Brown Brim",
-        imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
-        price: 25
-      },
-      {
-        id: 2,
-        name: "Blue Beanie",
-        imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
-        price: 18
-      },
-      {
-        id: 3,
-        name: "Brown Cowboy",
-        imageUrl: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        name: "Classic Watch",
+        imageUrl:
+          "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
         price: 35
       },
       {
+        id: 2,
+        name: "Apple Watch",
+        imageUrl:
+          "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80",
+        price: 58
+      },
+      {
+        id: 3,
+        name: "Black hat",
+        imageUrl:
+          "https://images.pexels.com/photos/1687719/pexels-photo-1687719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        price: 15
+      },
+      {
         id: 4,
-        name: "Grey Brim",
-        imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
-        price: 25
+        name: "Bracelet",
+        imageUrl:
+          "https://images.pexels.com/photos/1781621/pexels-photo-1781621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        price: 26
       },
       {
         id: 5,
-        name: "Green Beanie",
-        imageUrl: "https://i.ibb.co/YTjW3vF/green-beanie.png",
-        price: 18
+        name: "Wallet",
+        imageUrl:
+          "https://images.unsplash.com/photo-1579706966804-be9f2bf0b2eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        price: 8
       },
       {
         id: 6,
-        name: "Palm Tree Cap",
-        imageUrl: "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
+        name: "Sunglasses",
+        imageUrl:
+          "https://images.unsplash.com/photo-1497551060073-4c5ab6435f12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         price: 14
       },
       {
         id: 7,
-        name: "Red Beanie",
-        imageUrl: "https://i.ibb.co/bLB646Z/red-beanie.png",
-        price: 18
+        name: "Headphones",
+        imageUrl:
+          "https://images.unsplash.com/photo-1575405423465-b1051312be65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        price: 35
       },
       {
         id: 8,
-        name: "Wolf Cap",
-        imageUrl: "https://i.ibb.co/1f2nWMM/wolf-cap.png",
-        price: 14
-      },
-      {
-        id: 9,
-        name: "Blue Snapback",
-        imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
-        price: 16
+        name: "Speakers",
+        imageUrl:
+          "https://images.unsplash.com/photo-1594864650856-f279f6fe6d7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        price: 44
       }
+      // {
+      //   id: 9,
+      //   name: "Blue Snapback",
+      //   imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
+      //   price: 16
+      // }
     ]
   },
-  sneakers: {
+  shoes: {
     id: 2,
-    title: "Sneakers",
-    routeName: "sneakers",
+    title: "shoes",
+    routeName: "shoes",
     items: [
       {
         id: 10,
-        name: "Adidas NMD",
-        imageUrl: "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
-        price: 220
+        name: "Funky Shoes",
+        imageUrl:
+          "https://images.unsplash.com/photo-1590483736622-39da8acf7eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80",
+        price: 26
       },
       {
         id: 11,
         name: "Adidas Yeezy",
-        imageUrl: "https://i.ibb.co/dJbG1cT/yeezy.png",
-        price: 280
+        imageUrl:
+          "https://images.unsplash.com/photo-1585232004423-244e0e6904e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+        price: 52
       },
       {
         id: 12,
-        name: "Black Converse",
-        imageUrl: "https://i.ibb.co/bPmVXyP/black-converse.png",
-        price: 110
+        name: "Nike",
+        imageUrl:
+          "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+        price: 60
       },
       {
         id: 13,
         name: "Nike White AirForce",
-        imageUrl: "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
-        price: 160
+        imageUrl:
+          "https://images.unsplash.com/photo-1579338908476-3a3a1d71a706?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+        price: 52
       },
       {
         id: 14,
-        name: "Nike Red High Tops",
-        imageUrl: "https://i.ibb.co/QcvzydB/nikes-red.png",
-        price: 160
+        name: "Nike Yezzy",
+        imageUrl:
+          "https://images.pexels.com/photos/1280064/pexels-photo-1280064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: 34
       },
       {
         id: 15,
-        name: "Nike Brown High Tops",
-        imageUrl: "https://i.ibb.co/fMTV342/nike-brown.png",
-        price: 160
+        name: "Reebok",
+        imageUrl:
+          "https://images.unsplash.com/photo-1557461761-c7c2b7a5fa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80",
+        price: 40
       },
       {
         id: 16,
-        name: "Air Jordan Limited",
-        imageUrl: "https://i.ibb.co/w4k6Ws9/nike-funky.png",
-        price: 190
+        name: "Yellow Addidas",
+        imageUrl:
+          "https://images.unsplash.com/photo-1568039971229-d18db37510fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        price: 60
       },
       {
         id: 17,
-        name: "Timberlands",
-        imageUrl: "https://i.ibb.co/Mhh6wBg/timberlands.png",
-        price: 200
+        name: "Woodland",
+        imageUrl:
+          "https://images.unsplash.com/photo-1515181316919-a29560a2f3fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        price: 55
       }
     ]
   },
-  jackets: {
-    id: 3,
-    title: "Jackets",
-    routeName: "jackets",
-    items: [
-      {
-        id: 18,
-        name: "Black Jean Shearling",
-        imageUrl: "https://i.ibb.co/XzcwL5s/black-shearling.png",
-        price: 125
-      },
-      {
-        id: 19,
-        name: "Blue Jean Jacket",
-        imageUrl: "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
-        price: 90
-      },
-      {
-        id: 20,
-        name: "Grey Jean Jacket",
-        imageUrl: "https://i.ibb.co/N71k1ML/grey-jean-jacket.png",
-        price: 90
-      },
-      {
-        id: 21,
-        name: "Brown Shearling",
-        imageUrl: "https://i.ibb.co/s96FpdP/brown-shearling.png",
-        price: 165
-      },
-      {
-        id: 22,
-        name: "Tan Trench",
-        imageUrl: "https://i.ibb.co/M6hHc3F/brown-trench.png",
-        price: 185
-      }
-    ]
-  },
+  // jackets: {
+  //   id: 3,
+  //   title: "Jackets",
+  //   routeName: "jackets",
+  //   items: [
+  //     {
+  //       id: 18,
+  //       name: "Black Jean Shearling",
+  //       imageUrl: "https://i.ibb.co/XzcwL5s/black-shearling.png",
+  //       price: 125
+  //     },
+  //     {
+  //       id: 19,
+  //       name: "Blue Jean Jacket",
+  //       imageUrl: "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
+  //       price: 90
+  //     },
+  //     {
+  //       id: 20,
+  //       name: "Grey Jean Jacket",
+  //       imageUrl: "https://i.ibb.co/N71k1ML/grey-jean-jacket.png",
+  //       price: 90
+  //     },
+  //     {
+  //       id: 21,
+  //       name: "Brown Shearling",
+  //       imageUrl: "https://i.ibb.co/s96FpdP/brown-shearling.png",
+  //       price: 165
+  //     },
+  //     {
+  //       id: 22,
+  //       name: "Tan Trench",
+  //       imageUrl: "https://i.ibb.co/M6hHc3F/brown-trench.png",
+  //       price: 185
+  //     }
+  //   ]
+  // },
   womens: {
     id: 4,
-    title: "Womens",
+    title: "womens",
     routeName: "womens",
     items: [
       {
         id: 23,
-        name: "Blue Tanktop",
-        imageUrl: "https://i.ibb.co/7CQVJNm/blue-tank.png",
-        price: 25
+        name: "Black Top",
+        imageUrl:
+          "https://images.unsplash.com/photo-1503342394128-c104d54dba01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        price: 17
       },
       {
         id: 24,
-        name: "Floral Blouse",
-        imageUrl: "https://i.ibb.co/4W2DGKm/floral-blouse.png",
-        price: 20
+        name: "Red Dress",
+        imageUrl:
+          "https://images.unsplash.com/photo-1582041148887-67274b989ae3?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+        price: 26
       },
       {
         id: 25,
-        name: "Floral Dress",
-        imageUrl: "https://i.ibb.co/KV18Ysr/floral-skirt.png",
-        price: 80
+        name: "Blue Hoodie",
+        imageUrl:
+          "https://images.unsplash.com/photo-1556347961-f9521a88cb8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        price: 10
       },
       {
         id: 26,
-        name: "Red Dots Dress",
-        imageUrl: "https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png",
-        price: 80
+        name: "Grey Sweater",
+        imageUrl:
+          "https://images.unsplash.com/photo-1556683944-ba658344ba06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        price: 30
       },
       {
         id: 27,
-        name: "Striped Sweater",
-        imageUrl: "https://i.ibb.co/KmSkMbH/striped-sweater.png",
-        price: 45
+        name: "Grey Tanktop",
+        imageUrl:
+          "https://images.unsplash.com/photo-1441123100240-f9f3f77ed41b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        price: 16
       },
       {
         id: 28,
-        name: "Yellow Track Suit",
-        imageUrl: "https://i.ibb.co/v1cvwNf/yellow-track-suit.png",
-        price: 135
+        name: "Black Jacket",
+        imageUrl:
+          "https://images.unsplash.com/photo-1513369551131-f7824b746dc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+        price: 13
       },
       {
         id: 29,
-        name: "White Blouse",
-        imageUrl: "https://i.ibb.co/qBcrsJg/white-vest.png",
-        price: 20
+        name: "Black Tshirt",
+        imageUrl:
+          "https://images.unsplash.com/photo-1503342484812-ee33283508a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        price: 29
       }
     ]
   },
@@ -208,39 +231,45 @@ const SHOP_DATA = {
     items: [
       {
         id: 30,
-        name: "Camo Down Vest",
-        imageUrl: "https://i.ibb.co/xJS0T3Y/camo-vest.png",
-        price: 325
+        name: "Camo Down Tuxedo",
+        imageUrl:
+          "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        price: 36
       },
       {
         id: 31,
-        name: "Floral T-shirt",
-        imageUrl: "https://i.ibb.co/qMQ75QZ/floral-shirt.png",
-        price: 20
+        name: "Red Tuxedo",
+        imageUrl:
+          "https://images.unsplash.com/photo-1548917065-4212d1544e43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        price: 18
       },
       {
         id: 32,
         name: "Black & White Longsleeve",
-        imageUrl: "https://i.ibb.co/55z32tw/long-sleeve.png",
-        price: 25
+        imageUrl:
+          "https://images.unsplash.com/photo-1590710187581-0ca1d0f74854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        price: 22
       },
       {
         id: 33,
-        name: "Pink T-shirt",
-        imageUrl: "https://i.ibb.co/RvwnBL8/pink-shirt.png",
-        price: 25
+        name: "Black Tshirt",
+        imageUrl:
+          "https://images.unsplash.com/photo-1503341733017-1901578f9f1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        price: 21
       },
       {
         id: 34,
         name: "Jean Long Sleeve",
-        imageUrl: "https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png",
-        price: 40
+        imageUrl:
+          "https://images.unsplash.com/photo-1484515991647-c5760fcecfc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=687&q=80",
+        price: 20
       },
       {
         id: 35,
         name: "Burgundy T-shirt",
-        imageUrl: "https://i.ibb.co/mh3VM1f/polka-dot-shirt.png",
-        price: 25
+        imageUrl:
+          "https://images.unsplash.com/photo-1503341910231-c3d098fafba1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        price: 35
       }
     ]
   }

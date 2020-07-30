@@ -1,37 +1,49 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: "hats",
-      imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
-      id: 1,
-      linkUrl: "shop/hats"
-    },
-    {
-      title: "jackets",
-      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
-      id: 2,
-      linkUrl: "shop/jackets"
-    },
-    {
-      title: "sneakers",
-      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
-      id: 3,
-      linkUrl: "shop/sneakers"
+      title: "mens",
+      imageUrl:
+        "https://images.unsplash.com/photo-1535891169584-75bcaf12e964?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ut ea nostrum excepturi dolor, aut facere architecto esse minima veritatis, non fuga similique nam doloribus?",
+      id: 5,
+      linkUrl: "shop/mens"
     },
     {
       title: "womens",
-      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
-      size: "large",
+      imageUrl:
+        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ut ea nostrum excepturi dolor, aut facere architecto esse minima veritatis, non fuga similique nam doloribus?",
       id: 4,
       linkUrl: "shop/womens"
     },
     {
-      title: "mens",
-      imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
-      size: "large",
-      id: 5,
-      linkUrl: "shop/mens"
+      title: "shoes",
+      imageUrl:
+        "https://images.unsplash.com/photo-1587502374301-1c46349e3608?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ut ea nostrum excepturi dolor, aut facere architecto esse minima veritatis, non fuga similique nam doloribus?",
+      id: 3,
+      linkUrl: "shop/shoes"
+    },
+    {
+      title: "accessories",
+      imageUrl:
+        "https://images.unsplash.com/3/www.madebyvadim.com.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1361&q=80",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ut ea nostrum excepturi dolor, aut facere architecto esse minima veritatis, non fuga similique nam doloribus?",
+      id: 1,
+      linkUrl: "shop/accessories"
     }
+    // {
+    //   title: "jackets",
+    //   imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ut ea nostrum excepturi dolor, aut facere architecto esse minima veritatis, non fuga similique nam doloribus?",
+    //   id: 2,
+    //   linkUrl: "shop/jackets"
+    // }
   ]
 };
 

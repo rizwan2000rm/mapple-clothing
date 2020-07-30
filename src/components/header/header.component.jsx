@@ -87,11 +87,11 @@ const Header = ({ currentUser, hidden }) => {
                 src="https://png.pngtree.com/template/20190927/ourlarge/pngtree-initials-letter-m-logo-vector-template-designs-image_311990.jpg"
               />
             </h3>
-            <a href="#name">
+            <Link to="/">
               <span className="name">Mapple Clothing</span>
-            </a>
-            <a href="#email">
-              <span className="email">enquiries.mappleclothing@gmail.com</span>
+            </Link>
+            <a href='mailto:enquiries.mappleclothing@gmail.com?subject="Enquiry"'>
+              enquiries.mappleclothing@gmail.com
             </a>
           </div>
         </li>

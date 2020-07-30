@@ -9,7 +9,10 @@ import MenuItem from "../menu-item/menu-item.component";
 import "./directory.styles.scss";
 
 const Directory = ({ sections }) => (
-  <div className="directory-menu">
+  // <div className="directory-menu">
+
+  // </div>
+  <div className="row">
     {sections.map(({ id, ...otherSectionProps }) => (
       <MenuItem key={id} {...otherSectionProps} />
     ))}
