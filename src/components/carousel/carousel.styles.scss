@@ -1,0 +1,8 @@
+.carousel {
+  height: 30vh;
+  max-height: 400px;
+}
+
+.carousel.carousel-slider .carousel-item {
+  min-height: 0;
+}
