@@ -18,7 +18,7 @@ const StripeCheckoutButton = ({ price }) => {
       name="Mapple Clothing"
       billingAddress
       shippingAddress
-      image="https://svgshare.com/i/CUz.svg"
+      image="https://png.pngtree.com/template/20190927/ourlarge/pngtree-initials-letter-m-logo-vector-template-designs-image_311990.jpg"
       description={`Total: $${price}/-`}
       amount={priceForStripe}
       panelLabel="Pay now"
