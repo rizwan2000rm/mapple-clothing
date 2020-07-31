@@ -35,13 +35,12 @@ const Header = ({ currentUser, hidden }) => {
             <Link className="brand-logo" to="/">
               Mapple Clothing
             </Link>
-            <a
-              href="/"
+            <span
               data-target="slide-out"
-              className="sidenav-trigger right"
+              className="sidenav-trigger right click"
             >
               <i className="material-icons">menu</i>
-            </a>
+            </span>
 
             <ul className="right hide-on-med-and-down">
               <li>
