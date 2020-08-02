@@ -10,7 +10,7 @@
 
 > FireBase
 
-> Stripe - Payment handled with backend server built with Node.js Express.js
+> Stripe Payments
 
 > SASS
 
