@@ -1,5 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
 }
 
 h1,
@@ -21,12 +34,20 @@ button {
   font-weight: 400;
 }
 
-* {
-  box-sizing: border-box;
+img {
+  max-height: 100%;
 }
 
-img {
-  width: 100%;
+.container {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .row {

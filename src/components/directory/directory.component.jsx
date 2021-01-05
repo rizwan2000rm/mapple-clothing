@@ -6,19 +6,19 @@ import { selectDirectorySections } from "../../redux/directory/directory.selecto
 
 import MenuItem from "../menu-item/menu-item.component";
 
-import M from "materialize-css/dist/js/materialize.min.js";
+// import M from "materialize-css/dist/js/materialize.min.js";
 import "./directory.styles.scss";
 
 class Directory extends React.Component {
-  componentDidMount() {
-    document.addEventListener("DOMContentLoaded", function () {
-      const elems = document.querySelectorAll(".materialboxed");
-      // eslint-disable-next-line
-      M.Materialbox.init(elems, {});
-      // console.log("Menu");
-    });
-    // console.log("Menu UseEffect");
-  }
+  // componentDidMount() {
+  //   document.addEventListener("DOMContentLoaded", function () {
+  //     const elems = document.querySelectorAll(".materialboxed");
+  //     // eslint-disable-next-line
+  //     M.Materialbox.init(elems, {});
+  //     // console.log("Menu");
+  //   });
+  //   // console.log("Menu UseEffect");
+  // }
 
   render() {
     return (

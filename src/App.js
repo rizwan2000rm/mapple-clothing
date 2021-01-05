@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import "materialize-css/dist/css/materialize.min.css";
+// import "materialize-css/dist/css/materialize.min.css";
 import "./App.css";
 
 import HomePage from "./pages/homepage/homepage.component";

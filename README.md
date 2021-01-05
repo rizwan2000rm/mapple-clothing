@@ -1,26 +1,58 @@
-## Mapple Clothing
+## 👋 Introduction
 
-> E-commerce Platform
+<div align="center">
 
-## Built with
+<!-- ![Preview video]() -->
+<br/>
 
-> React
+# [Mapple Clothing](https://mapple-clothing.herokuapp.com)
 
-> Redux
+An Clothing E-Commerce Platform 🔥
 
-> FireBase
+[![License](https://img.shields.io/github/license/rizwan2000rm/mapple-clothing.svg?style=for-the-badge)](https://github.com/grtcdr/startpages)
+[![Issues](https://img.shields.io/github/issues/rizwan2000rm/mapple-clothing.svg?style=for-the-badge)](https://github.com/grtcdr/startpages)
+[![Stars](https://img.shields.io/github/stars/rizwan2000rm/mapple-clothing.svg?style=for-the-badge)](https://github.com/grtcdr/startpages)
+[![Forks](https://img.shields.io/github/forks/rizwan2000rm/mapple-clothing.svg?style=for-the-badge)](https://github.com/grtcdr/startpages)
 
-> Stripe Payments
+#### Technologies Used
 
-> SASS
+✔️ React, Redux, SASS
 
-## Features
+✔️ Node, Express, PostgreSQL
 
-1. React JSX Components with Redux state management
-2. User Authentication with Firebase (Google Sign In/ Email Password)
-3. Stripe Payments
-4. Responsive Web Design
+✔️ Firebase, Mapbox Maps, Stripe Payments
 
-## Contributing
+</div>
+
+## 🐼 Features
+
+<div>
+
+✔️ React JSX Components with Redux state management
+
+✔️ API for inventory management
+
+✔️ Cart (localStorage and database)
+
+✔️ User Authentication with Firebase (Google Sign In/ Email Password)
+
+✔️ Mapbox Maps
+
+✔️ Stripe Payments
+
+✔️ Responsive Web Design
+
+</div>
+
+## 🍕 Develop
+
+Access on [localhost:3000](http://localhost:3000/).
+
+```sh
+npm i
+npm start
+```
+
+## 🌍 Contribute
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
